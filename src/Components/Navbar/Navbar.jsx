@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import "./Navbar.css"
-import TuneIcon from '@mui/icons-material/Tune';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import TuneIcon from './Display.svg';
+import ArrowDropDownIcon from './down.svg';
 
 function Navbar({setGrouping, setOrdering}) {
   // available grouping and ordering options
@@ -21,9 +21,9 @@ function Navbar({setGrouping, setOrdering}) {
     <div className='navbar-main'>
         <div className='navbar-options-dropdown'>
           <button id="navbar-dropdown-button" onClick={() => toggleOptions()}>
-              <TuneIcon sx={{fontSize: "18px"}} />
+          <img src={TuneIcon} alt="display icon" />
               <p id="navbar-dropdown-text">Display</p>
-              <ArrowDropDownIcon />
+              <img src={ArrowDropDownIcon} alt="arrow drop down icon" />
             </button>
           {optionsView 
           && 
