@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Ticket.css"
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import FiberManualRecordIcon from './fiber_manual_record.svg';
 import AccountCircleIcon from './user-circle-svgrepo-com.svg';
 import urgentPriorityGrey from './SVG - Urgent Priority grey.svg';
 import todoIcon from './To-do.svg';
@@ -74,7 +74,7 @@ function Ticket({ ticket, grouping }) {
             )}
             {ticket.tag.map((tag, key) => (
               <div key={key} className='ticket-tag'>
-                <FiberManualRecordIcon color="disabled" sx={{ fontSize: "12px" }} />
+                <img src={FiberManualRecordIcon} alt="fiber manual icon" />
                 <div>{tag}</div>
               </div>
             ))}
